@@ -1,0 +1,20 @@
+/<%= link_to "Home", root_path, class: "link" %>/<%= link_to "Exercises", exercises_path, class: "link" %>/<%= link_to "##{@exercise.url_identifier}", @exercise, class: "link" %>
+
+<%= turbo_frame_tag dom_id(@exercise, :current_exercise_item) do %>
+  <div>
+    <%= @exercise_item.from_language_iso %>
+    <%= @exercise_item.from_word_value %>
+
+    <%= @exercise_item.given_answer %>
+    <%= @exercise_item.possible_solutions.join(", ") %>
+    <%= @exercise_item.score %>
+  </div>
+
+  <div>
+    <% if @next_exercise_item.present? %>
+      <%= link_to "Next exercise item", exercise_item_path(@exercise, @next_exercise_item), class: "button" %>
+    <% else %>
+      <%= link_to "Finish", exercise_path(@exercise), class: "button", "data-turbo-frame": "_top" %>
+    <% end %>
+  </div>
+<% end %>

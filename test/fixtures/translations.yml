@@ -1,0 +1,119 @@
+ja_sakura_kanji_en_cherry_blossoms:
+  word: ja_sakura_kanji
+  target_word: en_cherry_blossoms
+
+ja_sakura_hiragana_en_cherry_blossoms:
+  word: ja_sakura_hiragana
+  target_word: en_cherry_blossoms
+
+ja_ocha_hiragana_en_green_teas:
+  word: ja_ocha_hiragana
+  target_word: en_green_teas
+
+ja_ocha_hiragana_en_green_tea:
+  word: ja_ocha_hiragana
+  target_word: en_green_tea
+
+ja_ocha_hiragana_en_tea:
+  word: ja_ocha_hiragana
+  target_word: en_tea
+
+ja_kudasai_hiragana_en_please:
+  word: ja_kudasai_hiragana
+  target_word: en_please
+
+ja_sushi_hiragana_en_sushi:
+  word: ja_sushi_hiragana
+  target_word: en_sushi
+
+ja_gohan_hiragana_en_rice:
+  word: ja_gohan_hiragana
+  target_word: en_rice
+
+ja_gohan_hiragana_en_meal:
+  word: ja_gohan_hiragana
+  target_word: en_meal
+
+ja_gohan_hiragana_en_meals:
+  word: ja_gohan_hiragana
+  target_word: en_meals
+
+ja_to_hiragana_en_and:
+  word: ja_to_hiragana
+  target_word: en_and
+
+ja_to_hiragana_en_that:
+  word: ja_to_hiragana
+  target_word: en_that
+
+ja_to_hiragana_en_door:
+  word: ja_to_hiragana
+  target_word: en_door
+
+ja_isha_hiragana_en_doctor:
+  word: ja_isha_hiragana
+  target_word: en_doctor
+
+ja_isha_hiragana_en_doctors:
+  word: ja_isha_hiragana
+  target_word: en_doctors
+
+ja_sensei_hiragana_en_teacher:
+  word: ja_sensei_hiragana
+  target_word: en_teacher
+
+ja_sensei_hiragana_en_teachers:
+  word: ja_sensei_hiragana
+  target_word: en_teachers
+
+ja_sensei_hiragana_en_professor:
+  word: ja_sensei_hiragana
+  target_word: en_professor
+
+ja_yasashii_hiragana_en_kind:
+  word: ja_yasashii_hiragana
+  target_word: en_kind
+
+ja_yasashii_hiragana_en_easy:
+  word: ja_yasashii_hiragana
+  target_word: en_easy
+
+ja_yasashii_hiragana_en_nice:
+  word: ja_yasashii_hiragana
+  target_word: en_nice
+
+ja_bengoshi_hiragana_en_lawyer:
+  word: ja_bengoshi_hiragana
+  target_word: en_lawyer
+
+ja_bengoshi_hiragana_en_lawyers:
+  word: ja_bengoshi_hiragana
+  target_word: en_lawyers
+
+ja_kakkoii_hiragana_en_cool:
+  word: ja_kakkoii_hiragana
+  target_word: en_cool
+
+ja_kakkoii_hiragana_en_good_looking:
+  word: ja_kakkoii_hiragana
+  target_word: en_good_looking
+
+ja_kakkoii_hiragana_en_stylish:
+  word: ja_kakkoii_hiragana
+  target_word: en_stylish
+
+ja_hito_hiragana_en_person:
+  word: ja_hito_hiragana
+  target_word: en_person
+
+ja_hito_hiragana_en_people:
+  word: ja_hito_hiragana
+  target_word: en_people
+
+ja_mizu_kanji_en_water:
+  word: ja_mizu_kanji
+  target_word: en_water
+
+ja_mizu_kanji_en_waters:
+  word: ja_mizu_kanji
+  target_word: en_waters

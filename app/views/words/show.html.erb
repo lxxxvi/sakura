@@ -1,0 +1,28 @@
+<div class="flex flex-col gap-y-4">
+  <div>
+    /<%= link_to "Home", root_path, class: "link" %>/<%= link_to @word.language.iso, words_path(@word.language), class: "link" %>/<%= @word.value %>
+  </div>
+
+  <div class="flex items-baseline gap-x-1">
+    <h1><%= @word.value %></h1>
+    <% if @word.also_written_as.present? %>
+      <span class="text-gray-500">
+        (<%= @word.also_written_as.value %>)
+      </span>
+    <% end %>
+  </div>
+
+  <h2>Translations</h2>
+
+  <div>
+    <%= render "translations/list", translations: @word.translations, show_from: false %>
+  </div>
+
+  <div>
+    <%= link_to "Add translation", new_translation_path(translation: { source_word_language_iso: @word.language.iso, source_word_value: @word.value }), class: "button" %>
+  </div>
+
+  <div>
+    <%= button_to "Delete word", word_path(@word.language, @word), method: :delete, class: "dangerous-link", data: { "turbo-confirm": "Are you sure?" } %>
+  </div>
+</div>

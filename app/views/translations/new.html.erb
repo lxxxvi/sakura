@@ -1,0 +1,57 @@
+/<%= link_to "Home", root_path, class: "link" %>/New translation
+
+<h1>New translation</h1>
+
+<%= form_with(model: @form) do |f| %>
+  <div class="flex">
+    <div class="flex-col">
+      <div class="flex flex-col">
+        <span>From</span>
+        <%= f.label :source_word_language_iso, class: "sr-only" %>
+        <%= f.select :source_word_language_iso, f.object.target_word_language_options, include_blank: "Select" %>
+        <% if f.object.errors.include?(:source_word_language_iso) %>
+          <span class="text-red-300">
+            <%= f.object.errors.messages_for(:source_word_language_iso).join(", ") %>
+          </span>
+        <% end %>
+      </div>
+
+      <div>
+        <%= f.label :source_word_value, class: "sr-only" %>
+        <%= f.text_field :source_word_value %>
+        <% if f.object.errors.include?(:source_word_value) %>
+          <span class="text-red-300">
+            <%= f.object.errors.messages_for(:source_word_value).join(", ") %>
+          </span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="flex-col">
+      <div class="flex flex-col">
+        <span>To</span>
+        <%= f.label :target_word_language_iso, class: "sr-only" %>
+        <%= f.select :target_word_language_iso, f.object.target_word_language_options, include_blank: "Select" %>
+        <% if f.object.errors.include?(:target_word_language_iso) %>
+          <span class="text-red-300">
+            <%= f.object.errors.messages_for(:target_word_language_iso).join(", ") %>
+          </span>
+        <% end %>
+      </div>
+
+      <div>
+        <%= f.label :target_word_value, class: "sr-only" %>
+        <%= f.text_field :target_word_value %>
+        <% if f.object.errors.include?(:target_word_language_iso) %>
+          <span class="text-red-300">
+            <%= f.object.errors.messages_for(:target_word_language_iso).join(", ") %>
+          </span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <%= f.submit nil, class: "button" %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+/<%= link_to "Home", root_path, class: "link" %>/<%= link_to "Exercises", exercises_path, class: "link" %>/<%= link_to "##{@exercise.url_identifier}", @exercise, class: "link" %>
+
+<%= turbo_frame_tag dom_id(@exercise, :current_exercise_item) do %>
+  <%= form_with(model: @exercise_item, url: exercise_item_path(@exercise, @exercise_item)) do |f| %>
+    <%= @exercise_item.from_language_iso %>
+    <%= @exercise_item.from_word_value %>
+
+    <%= f.text_field :given_answer %>
+    <% if f.object.errors.include?(:given_answer) %>
+      <span class="text-red-400">
+        <%= f.object.errors.messages_for(:given_answer).join(", ") %>
+      </span>
+    <% end %>
+
+    <%= f.submit nil, class: "button" %>
+  <% end %>
+<% end %>

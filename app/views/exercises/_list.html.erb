@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Started</th>
+      <th>Ended</th>
+      <th>Completion</th>
+      <th>Score</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% exercises.each do |exercise| %>
+      <tr>
+        <td><%= exercise.url_identifier %></td>
+        <td><%= exercise.started_at %></td>
+        <td><%= exercise.ended_at %></td>
+        <td><%= exercise.completion_percentage %></td>
+        <td><%= exercise.score_percentage %></td>
+        <td><%= link_to "Show", exercise %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

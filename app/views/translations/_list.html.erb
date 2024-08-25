@@ -1,0 +1,30 @@
+<% local_assigns.with_defaults(show_from: true) => { show_from: } %>
+<table>
+  <thead>
+    <tr>
+      <% if show_from %>
+        <th colspan="2">From</th>
+      <% end %>
+      <th colspan="2">To</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% translations.each do |translation| %>
+      <tr>
+        <% if show_from %>
+          <td><%= link_to translation.word.value, word_path(translation.word.language.iso, translation.word), class: "link" %></td>
+          <td><%= link_to translation.word.language.iso, words_path(translation.word.language.iso), class: "link" %>
+        <% end %>
+
+        </td>
+        <td><%= link_to translation.target_word.value, word_path(translation.target_word.language.iso, translation.target_word), class: "link" %></td>
+        <td><%= link_to translation.target_word.language.iso, words_path(translation.target_word.language.iso), class: "link" %></td>
+        <td>
+          <%= button_to "Delete translation", translation_path(translation), method: :delete, class: "dangerous-link", data: { "turbo-confirm": "Are you sure?" } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

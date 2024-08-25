@@ -1,0 +1,9 @@
+/<%= link_to "Home", root_path, class: "link" %>
+
+<h1>Exercises</h1>
+
+<h2>Latest exercises</h2>
+
+<%= render "exercises/list", exercises: @exercises %>
+
+<%= button_to "Start new exercise", exercises_path, class: "button" %>

@@ -1,0 +1,176 @@
+ja_sakura_hiragana:
+  language: ja
+  value: "さくら"
+
+ja_sakura_kanji:
+  language: ja
+  value: "桜"
+  also_written_as: ja_sakura_hiragana
+
+en_cherry_blossoms:
+  language: en
+  value: "cherry blossoms"
+
+ja_ocha_hiragana:
+  language: ja
+  value: "おちゃ"
+
+ja_kudasai_hiragana:
+  language: ja
+  value: "ください"
+
+ja_sushi_hiragana:
+  language: ja
+  value: "すし"
+
+ja_gohan_hiragana:
+  language: ja
+  value: "ごはん"
+
+ja_mizu_hiragana:
+  language: ja
+  value: "みず"
+
+ja_to_hiragana:
+  language: ja
+  value: "と"
+
+ja_isha_hiragana:
+  language: ja
+  value: "いしゃ"
+
+ja_sensei_hiragana:
+  language: ja
+  value: "せんせい"
+
+ja_yasashii_hiragana:
+  language: ja
+  value: "やさしい"
+
+ja_bengoshi_hiragana:
+  language: ja
+  value: "べんごし"
+
+ja_kakkoii_hiragana:
+  language: ja
+  value: "かっこいい"
+
+ja_hito_hiragana:
+  language: ja
+  value: "ひと"
+
+en_green_tea:
+  language: en
+  value: "green tea"
+
+en_green_teas:
+  language: en
+  value: "green teas"
+
+en_tea:
+  language: en
+  value: "tea"
+
+en_please:
+  language: en
+  value: "please"
+
+en_sushi:
+  language: en
+  value: "sushi"
+
+en_rice:
+  language: en
+  value: "rice"
+
+en_meal:
+  language: en
+  value: "meal"
+
+en_meals:
+  language: en
+  value: "meals"
+
+en_water:
+  language: en
+  value: "water"
+
+en_waters:
+  language: en
+  value: "waters"
+
+en_and:
+  language: en
+  value: "and"
+
+en_that:
+  language: en
+  value: "that"
+
+en_door:
+  language: en
+  value: "door"
+
+en_doctor:
+  language: en
+  value: "doctor"
+
+en_doctors:
+  language: en
+  value: "doctors"
+
+en_teacher:
+  language: en
+  value: "teacher"
+
+en_teachers:
+  language: en
+  value: "teachers"
+
+en_professor:
+  language: en
+  value: "professor"
+
+en_kind:
+  language: en
+  value: "kind"
+
+en_easy:
+  language: en
+  value: "easy"
+
+en_nice:
+  language: en
+  value: "nice"
+
+en_lawyer:
+  language: en
+  value: "lawyer"
+
+en_lawyers:
+  language: en
+  value: "lawyers"
+
+en_cool:
+  language: en
+  value: "cool"
+
+en_good_looking:
+  language: en
+  value: "good-looking"
+
+en_stylish:
+  language: en
+  value: "stylish"
+
+en_person:
+  language: en
+  value: "person"
+
+en_people:
+  language: en
+  value: "people"
+
+ja_mizu_kanji:
+  language: ja
+  value: "水"

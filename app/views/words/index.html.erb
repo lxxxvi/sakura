@@ -1,0 +1,7 @@
+/<%= link_to "Home", root_path, class: "link" %>
+
+<h1><%= @language.iso %></h1>
+
+<h2>Latest words</h2>
+
+<%= render "list", words: @words %>

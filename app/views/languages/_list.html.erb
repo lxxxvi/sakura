@@ -1,0 +1,13 @@
+<div class="flex gap-2">
+  <% languages.each do |language| %>
+    <%= link_to words_path(language), class: "opacity-70 bg-gray-100 rounded-3xl border-4 hover:border-red-300 hover:opacity-100 transition" do %>
+      <div class="flex gap-y-2 flex-col items-center justify-center w-36 h-36">
+        <div class="text-4xl"><%= language.iso %></div>
+        <div class="flex flex-col text-xs items-center">
+          <div><%= language.words.size %> words</div>
+          <div><%= Translation.where(word: language.words).size %> translations</div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

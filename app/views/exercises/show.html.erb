@@ -1,0 +1,55 @@
+/<%= link_to "Home", root_path, class: "link" %>/<%= link_to "Exercises", exercises_path, class: "link" %>
+
+<h1>Exercise #<%= @exercise.url_identifier %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Completion</th>
+      <th>Score</th>
+      <th>Ended at</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @exercise.completion_percentage %></td>
+      <td><%= @exercise.score_percentage %></td>
+      <td><%= @exercise.ended_at %></td>
+    </tr>
+  </tbody>
+</table>
+
+<% if @exercise.ended? %>
+  <h2>Items</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>From</th>
+        <th>Word value</th>
+        <th>To</th>
+        <th>Possible solutions</th>
+        <th>Given solution</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @exercise.exercise_items.each do |exercise_item| %>
+        <tr>
+          <td><%= exercise_item.position %></td>
+          <td><%= exercise_item.from_language_iso %></td>
+          <td><%= exercise_item.from_word_value %></td>
+          <td><%= exercise_item.to_language_iso %></td>
+          <td><%= exercise_item.possible_solutions.join(", ") %></td>
+          <td><%= exercise_item.given_answer %></td>
+          <td><%= exercise_item.score %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <%= turbo_frame_tag dom_id(@exercise, :current_exercise_item), src: exercise_item_path(@exercise, @exercise.find_next_exercise_item) %>
+<% end %>
